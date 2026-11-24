@@ -25,6 +25,10 @@ read its JSON, ask the user to confirm, and explain the result.** Do not re-impl
 6. **Never read or print** credential files (`oauth_creds.json`, `.claude.json`, tokens, API keys).
    Detecting agents needs none of them.
 7. If you have no shell tool, give the user the exact command to paste themselves (see *Manual run*).
+8. **Do not run `guide.ps1` or `시작하기.bat`.** They are the interactive, human-facing path (they wait for keyboard input and
+   would hang you). You always use `setup.ps1 -Json`. If the user prefers clicking, tell them to double-click `시작하기.bat`.
+9. If a download/install step fails with `0x80072f0d`, "untrusted root" or an SSL/TLS trust error, do not disable certificate
+   checks. Read `docs/TROUBLESHOOTING.md` §1 and let the user decide; `scripts/fix-tls-root.ps1` needs administrator rights.
 
 ## What it changes (tell the user before applying)
 
