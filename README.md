@@ -68,3 +68,6 @@ skills/wmux-global-agents/
 prompts/bootstrap.md    아무 에이전트에 붙여넣는 시작 프롬프트
 AGENTS.md               이 저장소를 수정하는 LLM용 안내
 ```
+
+## 라이선스
+MIT — [LICENSE](LICENSE)
