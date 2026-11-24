@@ -26,7 +26,7 @@ wmux pane and (optionally) installs a global reply-language rule for every agent
 ### A. 이미 에이전트(claude/grok/agy)가 하나라도 설치돼 있을 때 — 가장 쉬움
 1. 이 저장소를 받습니다.
    ```powershell
-   git clone <이 저장소 URL> $HOME\wmux-agent-bootstrap
+   git clone https://github.com/chad0920kim/wmux-agent-bootstrap.git $HOME\wmux-agent-bootstrap
    ```
 2. 에이전트를 열고 [`prompts/bootstrap.md`](prompts/bootstrap.md)의 프롬프트를 붙여넣습니다(저장소 경로만 바꾸기).
 3. 에이전트가 검사 결과를 요약해 승인을 구하면 확인해 주세요.
